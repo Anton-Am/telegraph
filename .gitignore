@@ -1,0 +1,6 @@
+.idea
+vendor/
+composer.lock
+tests/_support/_generated/
+docker/.env
+.env
