@@ -1,5 +1,5 @@
 {
-  "name": "anton-am/telegraph-poster",
+  "name": "anton-am/telegraph",
   "description": "Simple telegraph posting library",
   "type": "library",
   "keywords": [
@@ -15,9 +15,9 @@
     }
   ],
   "support": {
-    "source": "https://github.com/Anton-Am/telegraph-poster",
-    "issues": "https://github.com/Anton-Am/telegraph-poster/issues",
-    "wiki": "https://github.com/Anton-Am/telegraph-poster/wiki"
+    "source": "https://github.com/Anton-Am/telegraph",
+    "issues": "https://github.com/Anton-Am/telegraph/issues",
+    "wiki": "https://github.com/Anton-Am/telegraph/wiki"
   },
   "require": {
     "php": "~7.3",
