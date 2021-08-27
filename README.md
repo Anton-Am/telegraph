@@ -2,8 +2,8 @@
 
 A simple php library for integration with [telegra.ph](https://telegra.ph/)
 
-[![Latest Stable Version](https://poser.pugx.org/anton-am/telegraph-poster/v/stable)](https://packagist.org/packages/anton-am/telegraph-poster)
-[![Total Downloads](https://poser.pugx.org/anton-am/telegraph-poster/downloads)](https://packagist.org/packages/anton-am/telegraph-poster)
+[![Latest Stable Version](https://poser.pugx.org/anton-am/telegraph/v/stable)](https://packagist.org/packages/anton-am/telegraph)
+[![Total Downloads](https://poser.pugx.org/anton-am/telegraph/downloads)](https://packagist.org/packages/anton-am/telegraph)
 
 ## Contents
 
@@ -17,11 +17,11 @@ A simple php library for integration with [telegra.ph](https://telegra.ph/)
 ### Raw composer install
 
 ```bash
-composer require anton-am/telegraph-poster
+composer require anton-am/telegraph
 ```
 ### composer.json
 ```bash
-"anton-am/telegraph-poster": "~1.0.0"
+"anton-am/telegraph": "~1.0.0"
 ```
 
 
@@ -120,10 +120,10 @@ All available methods:
 ```php
 $telegraph = new \AntonAm\Telegraph\Manager('b7316e15f67fe9a397ea8b151d5e15a75a9702e2472775fc3ab0e418467d');
 
-//Post views statistic
+//Page views statistic
 $page = $telegraph->page('Test-08-26-233')->statistic();
 
-//Post data
+//Page data
 $page = $telegraph->page('Test-08-26-233')->get();
 ```
 All available methods:
