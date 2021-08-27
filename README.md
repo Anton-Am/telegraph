@@ -1,6 +1,6 @@
-# Simple PHP Telegraph Poster
+# PHP Telegraph Library
 
-A small php library for creating posts on telegra.ph
+A simple php library for integration with [telegra.ph](https://telegra.ph/)
 
 [![Latest Stable Version](https://poser.pugx.org/anton-am/telegraph-poster/v/stable)](https://packagist.org/packages/anton-am/telegraph-poster)
 [![Total Downloads](https://poser.pugx.org/anton-am/telegraph-poster/downloads)](https://packagist.org/packages/anton-am/telegraph-poster)
@@ -14,7 +14,7 @@ A small php library for creating posts on telegra.ph
 
 ## Installation
 
-### Raw install
+### Raw composer install
 
 ```bash
 composer require anton-am/telegraph-poster
@@ -103,6 +103,8 @@ Nam at tortor in tellus interdum sagittis. Quisque id odio.
 Aliquam lobortis. Pellentesque libero tortor, tincidunt et, tincidunt eget, semper nec, quam.')
     ->addLink('Telegraph', 'https://telegra.ph')
     ->addImage('http://telegra.ph/file/6a5b15e7eb4d7329ca7af.jpg')
+    ->addHtml('hr')
+    ->addHtml('h3', 'Header')
     ->edit();
 ```
 All available methods:
