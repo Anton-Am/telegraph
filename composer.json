@@ -26,10 +26,7 @@
     "guzzlehttp/guzzle": "^6.5.5"
   },
   "require-dev": {
-    "codeception/codeception": "~2.5",
-    "phpunit/php-code-coverage": "~6.0",
-    "codeclimate/php-test-reporter": "0.4.4",
-    "squizlabs/php_codesniffer": "~3.4",
+    "codeception/codeception": "^4.1.1",
     "phalcon/ide-stubs": "^3.3"
   },
   "autoload": {
