@@ -14,10 +14,10 @@ use AntonAm\Telegraph\Entities\PageViews as PageViewsEntity;
  */
 class Page extends Base
 {
-    private $title;
-    private $authorName;
-    private $authorUrl;
-    private $content = [];
+    private ?string $title = null;
+    private ?string $authorName = null;
+    private ?string $authorUrl = null;
+    private ?array $content = [];
 
     public function get(): PageEntity
     {

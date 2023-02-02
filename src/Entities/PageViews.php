@@ -10,5 +10,5 @@ namespace AntonAm\Telegraph\Entities;
  */
 class PageViews extends Base
 {
-    public $views;
+    public int $views;
 }

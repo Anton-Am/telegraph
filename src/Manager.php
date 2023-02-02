@@ -16,9 +16,9 @@ use JsonException;
  */
 class Manager
 {
-    private $api = 'https://api.telegra.ph/';
-    private $client;
-    private $token;
+    private string $api = 'https://api.telegra.ph/';
+    private ?Client $client = null;
+    private string $token;
 
     public function __construct($telegraphAccountToken = null)
     {

@@ -20,7 +20,8 @@
     "wiki": "https://github.com/Anton-Am/telegraph/wiki"
   },
   "require": {
-    "php": "~7.3",
+    "php": "^7.4 || ^8.0",
+    "ext-json": "*",
     "psr/http-message": "~1.0",
     "guzzlehttp/guzzle": "^6.5.5"
   },

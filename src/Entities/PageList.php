@@ -10,6 +10,6 @@ namespace AntonAm\Telegraph\Entities;
  */
 class PageList extends Base
 {
-    public $total_count;
-    public $pages;
+    public int $total_count = 0;
+    public array $pages = [];
 }

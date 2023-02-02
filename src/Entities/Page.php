@@ -10,18 +10,18 @@ namespace AntonAm\Telegraph\Entities;
  */
 class Page extends Base
 {
-    public $path;
-    public $url;
-    public $title;
-    public $description;
-    public $author_name;
-    public $author_url;
-    public $image_url;
-    public $content;
-    public $views;
-    public $can_edit;
+    public ?string $path = null;
+    public ?string $url = null;
+    public ?string $title = null;
+    public ?string $description = null;
+    public ?string $author_name = null;
+    public ?string $author_url = null;
+    public ?string $image_url = null;
+    public ?array $content = [];
+    public int $views = 0;
+    public bool $can_edit;
 
-    public $account;
+    public ?Account $account = null;
 
     public function setAccount(?Account $account): self
     {

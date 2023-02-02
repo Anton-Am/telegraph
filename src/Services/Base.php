@@ -12,8 +12,8 @@ use AntonAm\Telegraph\Manager;
  */
 abstract class Base implements ServiceInterface
 {
-    protected $manager;
-    protected $entity;
+    protected ?Manager $manager = null;
+    protected ?string $entity = null;
 
     public function __construct(Manager $manager, $entity = null)
     {

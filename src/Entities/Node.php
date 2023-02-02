@@ -12,9 +12,9 @@ use AntonAm\Telegraph\Exceptions\NodeException;
  */
 class Node extends Base
 {
-    public $tag;
-    public $attrs;
-    public $children;
+    public string $tag;
+    public ?array $attrs = [];
+    public ?array $children = [];
 
     public function validate(): self
     {

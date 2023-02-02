@@ -10,21 +10,23 @@ require_once("vendor/autoload.php");
 echo '<pre>';
 try {
     //Create account
-    /*$telegraph = new Manager();
-    $newAccount = $telegraph->account()->create('MyToken', 'MyLongName', 'https://telegra.ph/');*/
+    //$telegraph = new Manager();
+    //$newAccount = $telegraph->account()->create('MyToken', 'MyLongName', 'https://telegra.ph/');
+    //var_dump($newAccount);
 
     //Account actions
-    /*$telegraph = new Manager('YOUR_TOKEN');
-    $account = $telegraph->account()->get();
-    $account = $telegraph->account()->edit('Fusce', 'Aliquam', 'https://www.user.url/');
-    $account = $telegraph->account()->revoke();
-    $account = $telegraph->account()->pages();*/
+    //$telegraph = new Manager('YourToken');
+    //var_dump($telegraph->account()->get());
+    //var_dump($telegraph->account()->edit('Fusce', 'Aliquam', 'https://www.user.url/'));
+    //var_dump($telegraph->account()->revoke());
+    //var_dump($telegraph->account()->pages());
 
     //Create new account and page
     /*$telegraph = new Manager();
     $page = $telegraph->page()->setTitle('Sed')
         ->addLink('Telegraph', 'https://telegra.ph')
-        ->create();*/
+        ->create();
+    var_dump($page);*/
 
     /*$telegraph = new Manager('b7316e15f67fe9a397ea8b151d5e15a75a9702e2472775fc3ab0e418467d');
     $page = $telegraph->page('Test-08-26-233')
@@ -41,14 +43,14 @@ try {
     Proin magna. Aliquam lobortis. Pellentesque libero tortor, tincidunt et, tincidunt eget, semper nec, quam. Pellentesque dapibus hendrerit tortor.')
         ->addLink('Telegraph', 'https://telegra.ph')
         ->addImage('http://telegra.ph/file/6a5b15e7eb4d7329ca7af.jpg')
-        ->edit();*/
+        ->addHtml('b', 'Bold text')
+        ->edit();
+    var_dump($page);*/
 
     //Other methods
-    $telegraph = new Manager('b7316e15f67fe9a397ea8b151d5e15a75a9702e2472775fc3ab0e418467d');
-    //$page = $telegraph->page('Test-08-26-233')->statistic();
-    $page = $telegraph->page('Test-08-26-233')->get();
-
-    print_r($page);
+    //$telegraph = new Manager('b7316e15f67fe9a397ea8b151d5e15a75a9702e2472775fc3ab0e418467d');
+    //var_dump($telegraph->page('Test-08-26-233')->statistic());
+    //var_dump($telegraph->page('Test-08-26-233')->get());
 } catch (NodeException $e) {
     //Custom tag problem
     echo '<h1>Node problem:</h1><br>';

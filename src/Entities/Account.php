@@ -10,10 +10,10 @@ namespace AntonAm\Telegraph\Entities;
  */
 class Account extends Base
 {
-    public $short_name;
-    public $author_name;
-    public $author_url;
-    public $access_token;
-    public $auth_url;
-    public $page_count;
+    public string $short_name;
+    public ?string $author_name = null;
+    public ?string $author_url = null;
+    public ?string $access_token = null;
+    public ?string $auth_url = null;
+    public int $page_count = 0;
 }
