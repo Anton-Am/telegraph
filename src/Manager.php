@@ -2,11 +2,12 @@
 
 namespace AntonAm\Telegraph;
 
+use AntonAm\Telegraph\Entities\Account as AccountEntity;
 use AntonAm\Telegraph\Exceptions\TelegraphRequestException;
 use AntonAm\Telegraph\Services\Account;
 use AntonAm\Telegraph\Services\Page;
-use AntonAm\Telegraph\Entities\Account as AccountEntity;
 use GuzzleHttp\Client;
+use GuzzleHttp\Exception\GuzzleException;
 use JsonException;
 
 /**
@@ -17,7 +18,7 @@ use JsonException;
 class Manager
 {
     private string $api = 'https://api.telegra.ph/';
-    private ?Client $client = null;
+    private ?Client $client;
     private string $token;
 
     public function __construct($telegraphAccountToken = null)
@@ -61,6 +62,7 @@ class Manager
      * @return mixed
      * @throws TelegraphRequestException
      * @throws JsonException
+     * @throws GuzzleException
      */
     public function handleRequest(string $method, array $data = [], bool $tokenRequired = true)
     {
@@ -69,7 +71,6 @@ class Manager
         if ($tokenRequired && !$this->hasToken()) {
             throw new TelegraphRequestException("Method {$method} requires access token");
         }
-
 
         if ($this->hasToken()) {
             $requestData['json']['access_token'] = $this->token;
