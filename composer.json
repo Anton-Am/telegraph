@@ -2,7 +2,7 @@
   "name": "anton-am/telegraph",
   "description": "Simple telegraph posting library",
   "type": "library",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "keywords": [
     "php",
     "telegraph"
@@ -24,7 +24,7 @@
     "php": "^7.4 || ^8.0",
     "ext-json": "*",
     "psr/http-message": "~1.0",
-    "guzzlehttp/guzzle": "^7.5.0"
+    "guzzlehttp/guzzle": "^6.5 || ^7.5"
   },
   "require-dev": {
     "codeception/codeception": "^4.1.1",
