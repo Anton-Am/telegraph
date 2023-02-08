@@ -2,6 +2,7 @@
   "name": "anton-am/telegraph",
   "description": "Simple telegraph posting library",
   "type": "library",
+  "version": "2.0",
   "keywords": [
     "php",
     "telegraph"
