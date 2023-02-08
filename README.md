@@ -21,7 +21,7 @@ composer require anton-am/telegraph
 ```
 ### composer.json
 ```bash
-"anton-am/telegraph": "~1.0.0"
+"anton-am/telegraph": "^1"
 ```
 
 
