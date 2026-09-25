@@ -36,7 +36,7 @@ class Page extends Base
         return $pageEntity;
     }
 
-    public function statistic(int $year = null, int $month = null, int $day = null, int $hour = null): PageViewsEntity
+    public function statistic(?int $year = null, ?int $month = null, ?int $day = null, ?int $hour = null): PageViewsEntity
     {
         $data = array_filter([
             'path'  => $this->entity,
@@ -94,7 +94,7 @@ class Page extends Base
         return new PageEntity($this->manager->handleRequest('/editPage', $data));
     }
 
-    public function setAuthor(string $name = null, string $url = null): self
+    public function setAuthor(?string $name = null, ?string $url = null): self
     {
         if (!empty($name)) {
             $this->authorName = $name;
@@ -136,7 +136,7 @@ class Page extends Base
         return $this;
     }
 
-    public function addHtml(string $tag, string $text = null, array $attrs = null): self
+    public function addHtml(string $tag, ?string $text = null, ?array $attrs = null): self
     {
         $node = new Node([
             'tag'      => $tag,

@@ -27,7 +27,7 @@ class Manager
         $this->setToken($telegraphAccountToken);
     }
 
-    public function page(string $path = null): Page
+    public function page(?string $path = null): Page
     {
         return new Page($this, $path);
     }

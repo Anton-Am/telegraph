@@ -17,7 +17,7 @@ class Account extends Base
         return new AccountEntity($this->manager->handleRequest('/getAccountInfo'));
     }
 
-    public function create(string $loginName = null, string $publicName = null, string $publicUrl = null): AccountEntity
+    public function create(?string $loginName = null, ?string $publicName = null, ?string $publicUrl = null): AccountEntity
     {
         $loginName = $loginName ?? uniqid('u', false);
 
@@ -30,7 +30,7 @@ class Account extends Base
         return new AccountEntity($this->manager->handleRequest('/createAccount', $data, false));
     }
 
-    public function edit(string $loginName = null, string $publicName = null, string $publicUrl = null): AccountEntity
+    public function edit(?string $loginName = null, ?string $publicName = null, ?string $publicUrl = null): AccountEntity
     {
         $loginName = $loginName ?? uniqid('u', false);
 
